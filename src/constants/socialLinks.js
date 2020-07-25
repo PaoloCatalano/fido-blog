@@ -1,19 +1,24 @@
 import React from "react"
-import { FaInstagramSquare, FaFacebookSquare, FaWhatsapp } from "react-icons/fa"
+import { FaHome, FaInstagramSquare, FaFacebookSquare, FaWhatsapp } from "react-icons/fa"
 
 const data = [
   {
     id: 1,
+    icon: <FaHome className="home" />,
+    url: "https://fidodogsitter.netlify.app/",
+  },
+  {
+    id: 2,
     icon: <FaFacebookSquare className="facebook" />,
     url: "https://www.facebook.com/Fidodogsitter",
   },
   {
-    id: 2,
+    id: 3,
     icon: <FaWhatsapp className="whatsapp" />,
     url: "https://wa.me/393466256832",
   },
   {
-    id: 3,
+    id: 4,
     icon: <FaInstagramSquare className="instagram" />,
     url: "https://www.instagram.com/fido_dogsitter/",
   },

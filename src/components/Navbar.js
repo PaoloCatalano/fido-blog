@@ -7,7 +7,7 @@ const Navbar = () => {
             <div className="sfondo-logo">
             <img src={logo} alt="logo" className="logo"/>
             </div>
-            <a href="https://fidodogsitter.netlify.app/" >Home di fido</a>
+            <h1>Le foto dei nostri cuccioli</h1>
         </div>
     )
 }
