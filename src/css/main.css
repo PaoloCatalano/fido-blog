@@ -87,6 +87,7 @@ a {
   border-radius: 100%;
   height: 8rem;
   width: 8rem;
+  margin: 0;
 }
 
 @keyframes rotate {
@@ -130,3 +131,61 @@ a {
   display: grid;
   place-items: center;
 }
+
+
+/* PROVA PopUp */
+
+/* Popup container */
+.popup {
+  position: relative;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: auto;
+  background-color: var(--nerino);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: auto;
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 15%;
+  /* margin-left: -80px; */
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  /* top: 100%; */
+  /* left: 50%; */
+  margin-left: -98px;
+  margin-top: -50px;
+  border-width: 5px;
+  border-style: solid;
+  transform: rotate(90deg);
+  border-color: var(--nerino) transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/* fine PROVA PopUp */
