@@ -1,31 +1,47 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
+import Cards from "../components/Cards"
+import Overlay from "../components/Overlay"
+const Home = ({ data }) => {
 
-const Home = () => {
+  
+  /* const [appear, setAppear] = React.useState(true)
+
+  const showPic = (nome) => {
+    console.log(nome);
+
+    for (var i = 0; i <= data.cani.nodes.length; i++){
+      if (data.cani.nodes[i].nome === nome) {
+        setAppear(false)
+      } else {
+        return null;
+      }
+    }
+    console.log(data.cani.nodes.length);
+  } */
+
   return (
     <Layout>
-    <div>
-      <div className="parent">
-        <div className="child">
-          <div className="child">A</div>
-          <div className="child">B</div>
-        </div>
-        
-        <div className="child">
-          <div className="child">A</div>
-          <div className="child">B</div>
-        </div>
-        
-        <div className="child">
-          <div className="child">A</div>
-          <div className="child">B</div>
-        </div>
-        
-    </div>
-    </div>
+      <Cards cani={data.cani.nodes} ></Cards>
     </Layout>
   )
 }
+export const query = graphql`
+  {
+    cani: allContentfulCani {
+      nodes {
+        contentful_id
+        nome
+        foto {
+          id
+          fluid {
+            ...GatsbyContentfulFluid
+          }
+        }
+      }
+    }
+  }
+`
 
 export default Home
