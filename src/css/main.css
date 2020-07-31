@@ -30,6 +30,7 @@ body {
   background: var(--chiarissimo);
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 ul {
   padding-inline-start: 0px;
@@ -42,6 +43,7 @@ li {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .center {
@@ -256,65 +258,6 @@ a {
 }
 /* fine PROVA PopUp */
 
-/* inizio OVERLAY */
-
-/* <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-#overlay {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 2;
-  cursor: pointer;
-}
-
-#text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-}
-</style>
-</head>
-<body>
-
-<div id="overlay" onclick="off()">
-  <div id="text">Overlay Text</div>
-</div>
-
-<div style="padding:20px">
-  <h2>Overlay with Text</h2>
-  <button onclick="on()">Turn on overlay effect</button>
-</div>
-
-<script>
-function on() {
-  document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
-</script>
-   
-</body>
-</html> 
- */
-
-/* fine OVERLAY */
-
 /* Scroll To Top Button */
 .myBtn {
   display: none; /* Hidden by default */
@@ -342,34 +285,21 @@ function off() {
 /* fine di Scroll To Top Button */
 
 
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px; 
-  color: var(--chiaro);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+/* cane-pages */
+.number-text{
+  background: var(--scurissimo);
+  color: var(--chiarissimo);
+  padding: 5px;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.single-photo{
+  border: 1px inset white;
 }
 
-
-.show-overlay{
-  display: none;
+.mySlide{
+  background: linear-gradient(var(--chiaro-spento),var(--nerino));
+  border-radius: 1%;
+  border: 1px solid var(--nerino);
+  margin: 2%;
+  padding: 2%;
 }

@@ -9,8 +9,10 @@ const OverlaySlide = ({ nome, foto }) => {
       {foto.map((pic, index) => {
         return (
           <div className="mySlide" key={nome + index}>
-            <div className="number-text">{index + 1} / {foto.length}</div>
+            <div className="single-photo">
+            <div className="number-text">Foto {index + 1} di {foto.length}</div>
             <Image key={nome + pic.id} fluid={pic.fluid} />
+            </div>
           </div>
         )
       })}
