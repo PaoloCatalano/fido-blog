@@ -27,7 +27,7 @@ css components
 }
 
 body {
-  background: var(--chiarissimo);
+  background: linear-gradient(white, var(--chiaro));
   margin: 0;
   padding: 0;
   text-align: center;
@@ -194,7 +194,9 @@ a {
 }
 
 /* PROVA PopUp */
+#myPopup{box-shadow: 2px 2px 10px 0 rgba(82, 81, 81, 0.664);
 
+}
 /* Popup container */
 .popup {
   position: relative;
@@ -215,6 +217,7 @@ a {
   top: 15%;
   left: 15%;
   /* margin-left: -80px; */
+  
 }
 
 /* Popup arrow */
@@ -273,6 +276,7 @@ a {
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+  box-shadow: 2px 2px 10px 0 rgba(129, 127, 127, 0.664);
 }
 
 .show-btn {
