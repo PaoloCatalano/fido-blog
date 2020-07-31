@@ -27,7 +27,7 @@ css components
 }
 
 body {
-  background: linear-gradient(white, var(--chiaro));
+  background: linear-gradient(white, var(--chiaro-spento));
   margin: 0;
   padding: 0;
   text-align: center;
@@ -297,13 +297,13 @@ a {
 }
 
 .single-photo{
-  border: 1px inset white;
+  border: none;
+ 
 }
 
 .mySlide{
-  background: linear-gradient(var(--chiaro-spento),var(--nerino));
-  border-radius: 1%;
-  border: 1px solid var(--nerino);
-  margin: 2%;
-  padding: 2%;
+  border: none;
+  margin: 5%;
+  padding: 7%;
+  
 }
